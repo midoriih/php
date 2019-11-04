@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{ background: pink; }
+
+.content-center{ 
+    width: 100%; 
+    max-width: 300px;
+    margin: auto;
+ /* overflow: hidden - só para verificiar se a imagem estourou na aplicação*/
+   padding: 20px;
+   background-color: white;
+   border-radius: 15px;
+}
+
+.content-center .text-center{
+    text-align: center;
+}
+
+.content-center img{
+    width: 70%;
+}
+
+.content-center form{
+    margin: 20px;
+}
+
+.content-center input,
+.content-center button {
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+}
+
+.content-center input{
+    border-bottom:palevioletred;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 10px;
+}
+
+
+.content-center button {
+    background-color: pink;
+    color: white;
+    
+}
+
+.content-center input:focus{
+    background-color: pink;
+
+}
+
+.content-center button:hover {
+    background-color: palevioletred;
+    color: #ffffff;
+}
+
+.content-center button:active {
+    background-color: #db36a4;
+    cursor: pointer;
+}
+
+header a {
+    color: #FFF;
+    text-decoration: none;
+} /*tirar a linha do link*/
+
+header a:visited{
+    color: palevioletred;
+} /*saber se o link já viu visitado*/
+
+header a:hover{
+    text-decoration: underline;
+}
+
+header a:focus {
+    color: white;
+}/*depois q fica selecionado*/
+
+header a:active{
+    color: #db36a4;
+} /*quando ativa o link fica marcado*/
+
+header h1{
+    font-size: 2.5em;
+    text-align: center;
+    margin: 50px auto;
+}
+
+footer{
+    font-size: .8em;
+    text-align: center;
+}
+
+.content-tabuada {
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    background-color: #FFF;
+    margin: auto;
+    padding: 20px;  
+}
+.content-tabuada table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.content-tabuada td{
+    padding: 10px;
+    border-top: 1px solid pink;
+
+}
+.content-tabuada tbody tr:nth-child(odd){
+    background-color: rgba(255, 192, 203, .3);
+}
+.content-tabuada tbody tr:hover{
+    background-color: rgba(255,192,203,.7);
+    cursor: pointer;
+}
+
+#valorA {
+    width: 100%;
+    padding: 10px;
+}
+
+.todo{
+    list-style: none;
+    padding: 0;        
+}
+
+.todo li{
+    padding: 10px;
+    border-bottom: #ccc 1px solid;
+
+}
+
+.todo li input{
+    width: initial;
+    margin-right: 10px;
+}
+
+.todo li.complete{
+    text-decoration: line-through;
+    color:#9999;    
+    cursor: not-allowed;
+}
+
+.todo button{
+    width: initial;
+    color: #FFF;
+    background-color: red;
+    float: right;
+    min-width: 30px;
+}
+
+#new-task {
+    width: 100%;
+    padding: 10px;
+}
